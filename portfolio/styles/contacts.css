@@ -1,0 +1,323 @@
+.contacts {
+  padding: 120px 0px 90px 0px;
+}
+
+@media (max-width: 450px) {
+  .contacts {
+    padding: 40px 0px 50px 0px;
+  }
+}
+
+.contacts__body {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__image img {
+  display: block;
+}
+
+@media (max-width: 1140px) {
+  .contacts__body {
+    justify-content: center;
+  }
+
+  .contacts__image {
+    display: none;
+  }
+}
+
+.contacts__title {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background: #ffa501;
+  position: relative;
+}
+
+.contacts__title::before {
+  content: "Контакты";
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 12px;
+  color: #000;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.contacts__sub-title {
+  color: #000;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+@media (max-width: 450px) {
+  .contacts__sub-title {
+    font-size: 24px;
+  }
+}
+
+.contacts__line {
+  width: 60px;
+  height: 3px;
+  background: #ffa501;
+  margin: 0px 0px 20px 0px;
+}
+
+.contacts__way {
+  color: #000;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0px 0px 20px 0px;
+}
+
+.contacts__links {
+  margin: 0px 0px 20px 0px;
+}
+
+.contacts__link {
+  display: inline-block;
+}
+
+.contacts__link:not(:last-child) {
+  margin-right: 25px;
+}
+
+.contacts__icon {
+  display: block;
+}
+
+.contacts__your-data {
+  color: #000;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0px 0px 30px 0px;
+}
+
+.form__data {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 24px 0px;
+}
+
+@media (max-width: 650px) {
+  .form__data {
+    flex-direction: column;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.data__name {
+  display: block;
+  border: 1px solid black;
+  padding: 9px 0px 14px 20px;
+  min-width: 280px;
+}
+
+.__error:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+}
+
+@media (max-width: 650px) {
+  .data__name {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.name__legend {
+  color: #000;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.name__input {
+  display: block;
+  width: 100%;
+  color: #000;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.data__email {
+  display: block;
+  border: 1px solid black;
+  padding: 9px 0px 14px 20px;
+  min-width: 280px;
+}
+
+.email__legend {
+  color: #000;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.email__input {
+  display: block;
+  width: 100%;
+  color: #000;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.form__message {
+  border: 1px solid black;
+  min-width: 585px;
+  margin: 0px 0px 28px 0px;
+  padding: 0px 20px;
+}
+
+@media (max-width: 650px) {
+  .form__message {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form__message {
+    min-width: 300px;
+  }
+}
+
+.message__legend {
+  color: #000;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.message__textarea {
+  display: block;
+  padding: 10px 0px 0px 0px;
+  max-width: 540px;
+  min-width: 100%;
+
+  max-height: 185px;
+  min-height: 185px;
+}
+
+@media (max-width: 650px) {
+  .message__textarea {
+    max-width: 350px;
+  }
+}
+
+.form__agreement {
+  display: none;
+  align-items: center;
+  margin: 0px auto 20px auto;
+  max-width: 210px;
+}
+
+@media (max-width: 650px) {
+  .form__agreement {
+    display: flex;
+  }
+}
+
+.agreement__input {
+  width: 11px;
+  height: 11px;
+}
+
+.agreement__text {
+  margin: 0px 0px 0px 10px;
+}
+
+.agreement__text span {
+  color: #2306d6;
+}
+
+.form__send {
+  display: flex;
+  align-items: center;
+}
+
+.send-message-btn {
+  display: block;
+  min-height: 45px;
+  padding: 0px 26px;
+  color: #000;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background: #ffa501;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 650px) {
+  .form__send-message-btn {
+    margin: 0px auto;
+  }
+}
+
+.send__loader {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  margin: 0px 0px 0px 30px;
+  border: 3px solid #ffa501;
+  border-top: 3px solid #fff;
+  border-radius: 100%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*=====TEMPLATES======*/
+
+.email__error {
+  position: relative;
+}
+
+.name__error {
+  position: relative;
+}
+
+.error__decoration {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border: 1px solid red;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.error__text {
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 100px);
+  min-width: 200px;
+  background-color: #f7d7da;
+  border: 1px solid red;
+  z-index: 10;
+  border-radius: 5px;
+  color: #631a27;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__body">
+          <div class="header__sidebar">
+            <div class="sidebar__body sidebar">
+              <button class="sidebar__hamb hamb">
+                <span class="hamb__bar"></span>
+                <span class="hamb__bar"></span>
+                <span class="hamb__bar"></span>
+              </button>
+
+              <div class="sidebar__panel panel">
+                <button class="panel__close-btn">
+                  <span class="close-btn__bar"></span>
+                  <span class="close-btn__bar"></span>
+                </button>
+                <ul class="panel__links" id="menu">
+                  <li class="links__item">
+                    <a class="links__link" href="#experience">Мой опыт</a>
+                  </li>
+                  <li class="links__item">
+                    <a class="links__link" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+                <ul class="panel__socials">
+                  <li class="socials__item">
+                    <a
+                      class="socials__link"
+                      href="https://github.com/"
+                      target="_blank"
+                    >
+                      <img
+                        class="social__icon"
+                        src="./images/socials/Github.svg"
+                        alt="Github-icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <img
+                        class="social__icon"
+                        src="./images/socials/Instagram.svg"
+                        alt="Instagram-icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link"
+                      href="https://ru-ru.facebook.com/"
+                      target="_blank"
+                    >
+                      <img
+                        class="social__icon"
+                        src="./images/socials/Facebook.svg"
+                        alt="Facebook-icon"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="header__nav nav">
+          <div class="nav__body">
+            <div class="nav__text">Социальные сети</div>
+            <div class="nav__line"></div>
+            <div class="nav__socials">
+              <a class="nav__link" href="https://github.com/" target="_blank">
+                <img
+                  class="nav__icon"
+                  src="./images/transf-socials/github.svg"
+                  alt="github-icon"
+                />
+              </a>
+              <a
+                class="nav__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <img
+                  class="nav__icon"
+                  src="./images/transf-socials/instagram.svg"
+                  alt="instagram-icon"
+                />
+              </a>
+              <a
+                class="nav__link"
+                href="https://ru-ru.facebook.com/"
+                target="_blank"
+              >
+                <img
+                  class="nav__icon"
+                  src="./images/transf-socials/facebook.svg"
+                  alt="facebook-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page">
+        <div class="main-block__image ibg">
+          <img src="./images/mainblock/Background.jpg" alt="cover" />
+        </div>
+
+        <div class="container">
+          <div class="page__main-block main-block">
+            <div class="main-block__body">
+              <h1 class="main-block__title"></h1>
+              <div class="main-block__text">
+                Я web-разработчик из города Москва
+              </div>
+              <div class="main-block__buttons">
+                <a href="" class="main-block__button main-block__button--orange"
+                  >Портфолио
+                </a>
+                <a href="" class="main-block__button">Про меня</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="experience" class="page__experience experience">
+            <div class="experience__header">
+              <h2 class="experience__title"></h2>
+              <div class="experience__sub-title">Чем я буду полезна</div>
+              <div class="experience__line"></div>
+            </div>
+            <div class="experience__body">
+              <div class="experience__column">
+                <div class="experience__item">
+                  <div class="experience__dekoration-line"></div>
+                  <div class="experience__heading">Образование</div>
+                  <div class="experience__education education">
+                    <div class="education__icon">
+                      <img
+                        src="./images/experience/University.svg"
+                        alt="University"
+                      />
+                    </div>
+                    <div class="education__info info">
+                      <div class="info__title">МГТУ им. Н. Э. Баумана</div>
+                      <div class="info__sub-title">
+                        Диплом магистра | Москва (2014-2020)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </div>
+                  <div class="experience__education education">
+                    <div class="education__icon">
+                      <img
+                        src="./images/experience/Courses.svg"
+                        alt="Courses"
+                      />
+                    </div>
+                    <div class="education__info info">
+                      <div class="info__title">Udemy</div>
+                      <div class="info__sub-title">Курсы по Web-разработке</div>
+                    </div>
+                  </div>
+                  <div class="experience__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </div>
+                </div>
+              </div>
+              <div class="experience__column">
+                <div class="experience__item">
+                  <div class="experience__dekoration-line"></div>
+                  <div class="experience__heading">Опыт работы</div>
+                  <div class="experience__education education">
+                    <div class="education__icon">
+                      <img src="./images/experience/seo1.svg" alt="seo1" />
+                    </div>
+                    <div class="education__info info">
+                      <div class="info__title">Front-End Developer</div>
+                      <div class="info__sub-title">
+                        EPAM | Москва (2018-2019)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </div>
+                  <div class="experience__education education">
+                    <div class="education__icon">
+                      <img
+                        src="./images/experience/designer.svg"
+                        alt="designer"
+                      />
+                    </div>
+                    <div class="education__info info">
+                      <div class="info__title">UI/UX Designer</div>
+                      <div class="info__sub-title">
+                        Squad Team | Москва (2018)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmo.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="contacts" class="page__contacts contacts">
+            <div class="contacts__body">
+              <div class="contacts__image">
+                <img src="./images/contacts/Photo.png" alt="photo" />
+              </div>
+
+              <div class="contacts__content">
+                <div class="contacts__title"></div>
+                <div class="contacts__sub-title">Свяжитесь со мной</div>
+                <div class="contacts__line"></div>
+                <div class="contacts__way">Любым удобным для вас способом:</div>
+                <div class="contacts__links links">
+                  <a
+                    class="contacts__link"
+                    href="https://ru-ru.facebook.com/"
+                    target="_blank"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="./images/socials/Facebook.svg"
+                      alt="Facebook"
+                    />
+                  </a>
+                  <a
+                    class="contacts__link"
+                    href="https://telegram.org/"
+                    target="_blank"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="./images/socials/Telegram.svg"
+                      alt="Telegram"
+                    />
+                  </a>
+                  <a
+                    class="contacts__link"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="./images/socials/Instagram.svg"
+                      alt="Instagram"
+                    />
+                  </a>
+                </div>
+                <div class="contacts__your-data">
+                  Или оставьте ваши данные и я сама вам напишу:
+                </div>
+                <form action="" class="contacts__form form" novalidate>
+                  <div class="form__data data">
+                    <fieldset class="data__name name __req">
+                      <legend class="name__legend">Ваше имя</legend>
+                      <input
+                        name="name__input"
+                        class="name__input"
+                        type="text"
+                        placeholder="Name"
+                      />
+                      <div class="name__error error"></div>
+                    </fieldset>
+
+                    <fieldset class="data__email email __req">
+                      <legend class="email__legend">Ваша почта</legend>
+                      <input
+                        name="email__input"
+                        class="email__input"
+                        type="email"
+                        placeholder="Email"
+                      />
+                      <div class="email__error error"></div>
+                    </fieldset>
+                  </div>
+                  <fieldset class="form__message message">
+                    <legend class="message__legend">Ваше сообщение</legend>
+                    <textarea
+                      name="message__textarea"
+                      class="message__textarea"
+                      placeholder="Message"
+                    ></textarea>
+                  </fieldset>
+
+                  <div class="form__agreement agreement">
+                    <input class="agreement__input" type="checkbox" />
+                    <div class="agreement__text">
+                      Я согласен(а) с
+                      <span>политикой конфиденциальности</span>
+                    </div>
+                  </div>
+
+                  <div class="form__send send">
+                    <button class="send-message-btn">
+                      Отправить сообщение
+                    </button>
+                    <div class="send__loader"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
