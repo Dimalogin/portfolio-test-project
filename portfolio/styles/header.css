@@ -1,0 +1,170 @@
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.sidebar__body {
+  min-height: 61px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.sidebar__hamb {
+  min-height: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.hamb__bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+
+.hamb__bar:nth-child(2) {
+  width: 36px;
+}
+
+.sidebar__panel {
+  width: 0; /*345px*/
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffa501;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.panel__close-btn {
+  position: absolute;
+  min-height: 29px;
+  max-width: 29px;
+  background: transparent;
+  top: 24px;
+  right: 25px;
+}
+
+.close-btn__bar {
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.close-btn__bar:first-child {
+  transform: rotate(-45deg) translate(-4px, -3px);
+}
+
+.close-btn__bar:last-child {
+  transform: rotate(45deg) translate(-5px, 2px);
+}
+
+.panel__links {
+  margin: 140px 0px 0px 0px;
+  padding: 0px 0px 0px 75px;
+}
+
+.links__item {
+  display: block;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+}
+
+.links__item:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+
+.links__item:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7.5px);
+  left: -35px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.links__link {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.panel__socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.socials__item:not(:last-child) {
+  margin: 0px 15px 0px 0px;
+}
+
+.social__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.header__nav {
+  position: absolute;
+  top: 383px;
+  left: -106px;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 1370px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.nav__body {
+  display: flex;
+  align-items: center;
+}
+
+.nav__text {
+  color: #000;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.nav__line {
+  width: 70px;
+  height: 2px;
+  background: #000;
+  margin: 0px 0px 0px 15px;
+}
+
+.nav__link {
+  display: inline-block;
+  margin: 0px 0px 0px 15px;
+}
+
+.nav__icon {
+  display: block;
+  transform: rotate(90deg);
+}
