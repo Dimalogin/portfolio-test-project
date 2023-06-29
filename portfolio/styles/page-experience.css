@@ -1,0 +1,176 @@
+.experience {
+  padding: 120px 0px 0px 0px;
+}
+
+@media (max-width: 450px) {
+  .experience {
+    padding: 40px 0px 0px 0px;
+  }
+}
+
+.experience__header {
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+
+@media (max-width: 450px) {
+  .experience__header {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.experience__title {
+  margin: 0px auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background: #ffa501;
+  position: relative;
+}
+
+.experience__title:before {
+  content: "Опыт";
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 22px);
+  color: #000;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.experience__sub-title {
+  color: #000;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 0px 0px 25px 0px;
+}
+
+@media (max-width: 450px) {
+  .experience__sub-title {
+    font-size: 24px;
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+.experience__line {
+  margin: 0px auto;
+  width: 60px;
+  height: 3px;
+  background: #ffa501;
+}
+
+.experience__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 450px) {
+  .experience__column:not(:last-child) {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.experience__item {
+  padding: 0px 0px 0px 50px;
+  max-width: 425px;
+  position: relative;
+}
+
+.experience__dekoration-line {
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #ffa501;
+}
+
+.experience__dekoration-line::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 0.5px);
+  width: 1px;
+  height: 343px;
+  background: #000;
+}
+
+.experience__heading {
+  color: #000;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0px 0px 45px 0px;
+}
+
+@media (max-width: 450px) {
+  .experience__heading {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.experience__education {
+  display: flex;
+
+  align-items: center;
+  margin: 0px 0px 12px 0px;
+}
+
+.experience__text:not(:last-child) {
+  margin: 0px 0px 45px 0px;
+}
+
+.experience__text {
+  color: #000;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.education__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background: #ffa501;
+  position: relative;
+}
+
+.education__icon::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.5px);
+  left: -42px;
+  width: 42px;
+  height: 1px;
+  background: #000;
+}
+
+.education__icon img {
+  position: absolute;
+  top: 14px;
+  left: 17px;
+}
+
+.education__info {
+  margin: 0px 0px 0px 20px;
+}
+
+.info__title {
+  color: #000;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.info__sub-title {
+  color: #000;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
